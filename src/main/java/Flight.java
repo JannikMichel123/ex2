@@ -20,15 +20,44 @@ public class Flight {
 			char c[] = {'A','B','E','F'};
 			for (int j = 0; j < c.length; j++) {
 				for (int i = 0; i < 2; i++) {
-					UFSeats.add(new Seat(c[j]+"", "0" + i + 1));
+					UFSeats.add(new Seat(c[j]+"", "" + (i + 1)));
 				}
 			}
-			char s[]  = {'A','B','C','D','E','F'};
-			for (int j = 0; j < s.length; j++) {
+			char ep[]  = {'A','B','C','D','E','F'};
+			for (int j = 0; j < ep.length; j++) {
 				for (int i = 0; i < 7; i++) {
-					UFSeats.add(new Seat(s[j]+"", "0" + i + 1));
+					EPSeats.add(new Seat(ep[j]+"", "" + (i + 1)));
 				}
 			}
+			char e[]  = {'A','B','C','D','E','F'};
+			for (int j = 0; j < e.length; j++) {
+				for (int i = 0; i < 13; i++) {
+					ESeats.add(new Seat(e[j]+"", "" + (i + 1)));
+				}
+			}
+		}
+		if (type.equals("Boing 737-900")) {
+			char c[] = {'A','B','E','F'};
+			for (int j = 0; j < c.length; j++) {
+				for (int i = 0; i < 5; i++) {
+					UFSeats.add(new Seat(c[j]+"", "" + (i + 1)));
+				}
+			}
+			char ep[]  = {'A','B','C','D','E','F'};
+			for (int j = 0; j < ep.length; j++) {
+				for (int i = 0; i < 7; i++) {
+					EPSeats.add(new Seat(ep[j]+"", "" + (i + 1)));
+				}
+			}
+			char e[]  = {'A','B','C','D','E','F'};
+			for (int j = 0; j < e.length; j++) {
+				for (int i = 0; i < 19; i++) {
+					ESeats.add(new Seat(e[j]+"", "" + (i + 1)));
+				}
+			}
+			ESeats.add(new Seat("D", "" + 19));
+			ESeats.add(new Seat("E", "" + 19));
+			ESeats.add(new Seat("F", "" + 19));
 		}
 	}
 
