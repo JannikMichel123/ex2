@@ -59,6 +59,26 @@ public class Flight {
 			ESeats.add(new Seat("E", "" + 19));
 			ESeats.add(new Seat("F", "" + 19));
 		}
+		if(type.equals("Embraer E170")) {
+			char c[] = {'A','C','D'};
+			for (int j = 0; j < c.length; j++) {
+				for (int i = 0; i < 2; i++) {
+					UFSeats.add(new Seat(c[j]+"", "" + (i + 1)));
+				}
+			}
+			char ep[]  = {'A','B','C','D'};
+			for (int j = 0; j < ep.length; j++) {
+				for (int i = 0; i < 4; i++) {
+					EPSeats.add(new Seat(ep[j]+"", "" + (i + 1)));
+				}
+			}
+			char e[]  = {'A','B','C','D','E','F'};
+			for (int j = 0; j < e.length; j++) {
+				for (int i = 0; i < 12; i++) {
+					ESeats.add(new Seat(e[j]+"", "" + (i + 1)));
+				}
+			}
+		}
 	}
 
 }
