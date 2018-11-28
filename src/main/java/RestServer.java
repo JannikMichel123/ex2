@@ -35,8 +35,8 @@ public class RestServer {
 			c.add(Calendar.DATE, 1);
 			c.set(Calendar.HOUR_OF_DAY, 1);
 		}
-//		JOptionPane.showMessageDialog( null, "Ende" );
-//		server.stop( 0 );
+		JOptionPane.showMessageDialog( null, "Ende" );
+		server.stop( 0 );
 	}
 
 }
