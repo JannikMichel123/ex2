@@ -28,8 +28,8 @@ public class RestServer {
 		for (int j = 0; j < 7; j++) {
 			for (int i = 1; i < 4; i++) {
 				MessageResource.flightList.add(new Flight(""+(j*9+i*3+1), "Boing 737-900", "FRA", c.getTime().toString()));
-				MessageResource.flightList.add(new Flight(""+(j*9+i*3+2), "Airbus 319", "FRA", c.getTime().toString()));
-				MessageResource.flightList.add(new Flight(""+(j*9+i*3+3), "Embraer E170", "FRA", c.getTime().toString()));
+				MessageResource.flightList.add(new Flight(""+(j*9+i*3+2), "Airbus 319", "BER", c.getTime().toString()));
+				MessageResource.flightList.add(new Flight(""+(j*9+i*3+3), "Embraer E170", "MUN", c.getTime().toString()));
 				c.add(Calendar.HOUR_OF_DAY, 6);
 			}
 			c.add(Calendar.DATE, 1);

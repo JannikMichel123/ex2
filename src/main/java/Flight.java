@@ -8,6 +8,7 @@ public class Flight {
 	ArrayList<Seat> UFSeats = new ArrayList<Seat>();
 	ArrayList<Seat> EPSeats = new ArrayList<Seat>();
 	ArrayList<Seat> ESeats = new ArrayList<Seat>();
+	String basePrice = "";
 
 	public Flight(String flightNumber, String type, String destination, String departureDate) {
 		super();
@@ -78,6 +79,15 @@ public class Flight {
 					ESeats.add(new Seat(e[j]+"", "" + (i + 1)));
 				}
 			}
+		}
+		if(this.destination.equals("FRA")) {
+			this.basePrice = "12";
+		}
+		if(this.destination.equals("BER")) {
+			this.basePrice = "15";
+		}
+		if(this.destination.equals("MUC")) {
+			this.basePrice = "23";
 		}
 	}
 
