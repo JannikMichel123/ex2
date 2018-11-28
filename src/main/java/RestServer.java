@@ -3,6 +3,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 import javax.swing.JOptionPane;
+import javax.xml.ws.Endpoint;
 
 import com.sun.jersey.api.container.httpserver.HttpServerFactory;
 import com.sun.net.httpserver.HttpServer;
@@ -14,6 +15,11 @@ public class RestServer {
 		// TODO Auto-generated method stub
 		HttpServer server = HttpServerFactory.create( "http://localhost:8080/" );
 		server.start();
+		
+		Endpoint.publish("http://localhost:8090/soapservices", new SoapServiceImp());
+		
+
+		
 		Calendar c = Calendar.getInstance();
 		c.setTime(new Date());
 		c.set(Calendar.HOUR_OF_DAY, 1);

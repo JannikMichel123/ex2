@@ -9,6 +9,17 @@ public class Seat {
 		this.number = number;
 		
 	}
+	public String toPlace() {
+		String s = this.row+this.number;
+		return s;
+	}
 	
+	public boolean getisFree() {
+		return isFree;
+	}
+	
+	public void setisFree(boolean set) {
+		this.isFree = set;
+	}
 	
 }
